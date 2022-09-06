@@ -1,0 +1,18 @@
+[package]
+name = "static-reload"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.64"
+futures-util = "0.3.24"
+hyper = { version = "0.14.20", features = ["full"] }
+hyper-staticfile = "0.9.1"
+hyper-tungstenite = "0.8.1"
+structopt = "0.3.26"
+tokio = { version = "1.21.0", features = ["full"] }
+tokio-stream = { version = "0.1.9", features = ["io-util"] }
+
+[features]
